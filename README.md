@@ -5,15 +5,16 @@ Hangperson is the same game as Hangman, but meant to include a broader scope of 
 
 Key takeaways
 ==============
--importance of BDD and TDD during development
+-Importance of BDD and TDD during development
 -Service-Oriented-Architecture
--adapting a non-SaaS application to a SaaS environment 
+-Adapting a non-SaaS application to a SaaS environment 
 
 What I developed:
 =================
 
- All the methods that determine the game logic, first as a standalone component from the SaaS project and then   intergrating it into the SaaS framework
---Mapping resource routes to HTTP requests
+-All the methods that determine the game logic, first as a standalone component from the SaaS project and then   intergrating it into the SaaS framework
+-Mapping resource routes to HTTP requests
+
 
 Pre-existing:
 =================

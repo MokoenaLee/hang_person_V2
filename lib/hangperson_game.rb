@@ -6,7 +6,7 @@ class HangpersonGame
    
    
     
-  
+#initializing the variables used in the program
   def initialize(word)
     @word = word
     @guesses = ''
@@ -17,11 +17,9 @@ class HangpersonGame
     
   end
   
-  
-
  
- #keeping list of correct and incorrect guesses so far by adding characters to the list
- #ensure that if user enters more than one character variables remain unchanged
+#keeping list of correct and incorrect guesses so far by adding characters to the list
+#ensure that if user enters more than one character variables remain unchanged
 #also ensure that character has not been guessed before
 #the return booleans are confirming whether or not the appropriate variable was changed
 
@@ -57,7 +55,8 @@ class HangpersonGame
    end 
       
  end
-      
+ 
+#methods to display the arrays of correct and incorrect gueses at each stage 
  def self.guesses_so_r
     puts "Right guess #{@@guesses_right_far}"
  end 
@@ -66,7 +65,7 @@ class HangpersonGame
     puts "Wrong guess #{@@guesses_wrong_far}" 
  end
      
-#method to display the words guessed at each stage
+#method to display the guessed word thus far, only the characters in the word to be guessed are included
   def word_with_guesses
     w_hold = @word
     word_array= @word.chars
