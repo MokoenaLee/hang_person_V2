@@ -16,8 +16,12 @@ What I developed:
 -Mapping resource routes to HTTP requests
 
 
+Tests
+=================
+All 18 are passing
+
 Pre-existing:
 =================
-   Scaffold including: BDD tests and guiding instructions to help complete the assignment
-   on github: hw-sinatra-saas-hangperson 
+   -Scaffold including: BDD tests and guiding instructions to help complete the assignment
+   - on github: hw-sinatra-saas-hangperson 
 
