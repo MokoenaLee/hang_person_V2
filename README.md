@@ -6,7 +6,7 @@ Hangperson is the same game as Hangman, but meant to include a broader scope of 
 What I developed:
 =================
 
--All the methods that determine the game logic (Refer to the path: hang_person_V2/lib/). First, as a standalone component from the SaaS project (i.e setting up the class and methods in a IDE locally on the computer) and Secondly intergrating it into the SaaS framework (For routing/ testing)
+-All the methods that determine the game logic (Refer to the path: hang_person_V2/lib/hangperson_game.rb). First, as a standalone component from the SaaS project (i.e setting up the class and methods in a IDE locally on the computer) and Secondly intergrating it into the SaaS framework (For routing/ testing)
 -Mapping resource routes to HTTP requests
 
 
