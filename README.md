@@ -3,17 +3,18 @@ Hangperson: Developed using a scaffolded from an ESaaS assignment by Armando Fox
 
 Hangperson is the same game as Hangman, but meant to include a broader scope of people range who play the game. This was a homework assignment that I worked on during a web programming class.
 
+What I developed:
+=================
+
+-All the methods that determine the game logic (Refer to the path: hang_person_V2/lib/). First, as a standalone component from the SaaS project (i.e setting up the class and methods in a IDE locally on the computer) and Secondly intergrating it into the SaaS framework (For routing/ testing)
+-Mapping resource routes to HTTP requests
+
+
 Key takeaways
 ==============
 -Importance of BDD and TDD during development
 -Service-Oriented-Architecture
 -Adapting a non-SaaS application to a SaaS environment 
-
-What I developed:
-=================
-
--All the methods that determine the game logic, first as a standalone component from the SaaS project and then   intergrating it into the SaaS framework
--Mapping resource routes to HTTP requests
 
 
 Tests
