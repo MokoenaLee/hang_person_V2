@@ -1,7 +1,9 @@
-Hangperson: Developed using a scaffolded from an ESaaS assignment by Armando Fox and Nick Herson
+Hangperson:
 =================================================================================================
-
-Hangperson is the same game as Hangman, but meant to include a broader scope of people range who play the game. This was a homework assignment that I worked on during a web programming class.
+Hangperson is a game that applies the same logic as the hangman game, the name twist is intended for a more inclusive audience. This game is intended to be a web application developed in Ruby on Rails. The game logic is as follows: 
+- an API call is made to  a random word generator website
+- a player is given 8 attempts to guess the word by guessing the letters in the word
+- every wrong guess is recorded in order to determine when the player has reached the maximum guessing attempts
 
 What I developed:
 =================
