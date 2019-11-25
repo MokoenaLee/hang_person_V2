@@ -1,4 +1,4 @@
-The Guesser's Quest:
+Hang Person: The Guesser's Quest
 =================================================================================================
 The Guesser's Quest is a game that applies the same logic as the hangman game where a user is given a fixed number of attempts to guess the characters in a word. I have developed this game as a webapplication using Ruby on Rails and deployed to the cloud as a Heroku app.
 
