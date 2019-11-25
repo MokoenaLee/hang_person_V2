@@ -2,8 +2,11 @@ Hangperson:
 =================================================================================================
 Hangperson is a game that applies the same logic as the hangman game, the name twist is intended for a more inclusive audience. This game is intended to be a web application developed in Ruby on Rails. The game logic is as follows: 
 - an API call is made to  a random word generator website
-- a player is given 8 attempts to guess the word by guessing the letters in the word
+- a player is given a fixed number of attempts to guess the word by guessing the letters in the word
+- player is notitfied of any repeated guesses
 - every wrong guess is recorded in order to determine when the player has reached the maximum guessing attempts
+- win message is flashed upon successful guessing withing the specified number of attempts
+- upon loss, display message and encourage user to continue
 
 What I developed:
 =================
