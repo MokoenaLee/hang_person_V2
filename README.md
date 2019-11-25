@@ -17,16 +17,16 @@ Project Components: (hang_person_V2/lib/hangperson_game.rb)
 ===================
 - The game components for are structured using the Model View Controller design pattern to containerize the game logic
 
+ 
+ #### Order Context:
 - I developed the class logic first, as a standalone component from the SaaS project and then later integrated the game logic class into the SaaS framework  to include routing
 - The filepath specified above leads to the class that contains the logic that handles guesses made, right and wrong guesses as well as how to determine a win and a lose
 - Mapping resource routes to HTTP requests
 
  
- #### Order Context:
- 
 Tests (hang_person_V2/spec/hangperson_game_spec.rb)
 ====================================================
-I have written 18 acceptance tests to ensure that the code is working as expected. 
+I have written 18 rspec tests to ensure that the code is working as expected. 
 
 I wrote these tests when I was adapting my non- SaaS application to a SaaS based application to ensure:
 - that the application displays expected behavior when the user first navigates to the starting page and initiates a game
@@ -39,7 +39,7 @@ I wrote these tests when I was adapting my non- SaaS application to a SaaS based
 
 Key takeaways
 ==============
-- -Understanding how SaaS works through adapting a non-SaaS application to a SaaS environment 
+- Understanding how SaaS works through adapting a non-SaaS application to a SaaS environment 
 - Understanding how routing works for a RESTful infrastructure
 - Understanding the importance of Behavior Driven Design and Test Driven Development during development
 - Understanding containerizing logic through the Model View Controller design pattern
