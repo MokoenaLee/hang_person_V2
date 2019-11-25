@@ -52,6 +52,7 @@ GEM
     mustermann (1.0.3)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
+    pg (1.1.4)
     public_suffix (4.0.1)
     rack (2.0.7)
     rack-protection (2.0.7)
@@ -96,6 +97,7 @@ GEM
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
+    sqlite3 (1.4.1)
     templater (1.0.0)
       diff-lcs (>= 1.1.2)
       extlib (>= 0.9.5)
@@ -119,6 +121,7 @@ DEPENDENCIES
   cucumber (= 2.0.0)
   cucumber-sinatra (= 0.5.0)
   launchy (= 2.4.3)
+  pg
   rack-test (= 0.6.3)
   rack_session_access (= 0.1.1)
   rerun (= 0.10.0)
@@ -128,6 +131,7 @@ DEPENDENCIES
   simplecov (= 0.16.1)
   sinatra (>= 2.0.1)
   sinatra-flash (= 0.3.0)
+  sqlite3
   webmock (= 3.3.0)
 
 RUBY VERSION

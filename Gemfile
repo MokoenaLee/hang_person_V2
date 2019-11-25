@@ -7,6 +7,8 @@ gem 'sinatra-flash', '0.3.0'
 gem 'shotgun'
 
 group :development, :test do
+
+  gem 'sqlite3'
   gem 'cucumber', '2.0.0'
   gem 'cucumber-sinatra', '0.5.0'
   gem 'capybara', '3.1'
@@ -24,4 +26,9 @@ group :development, :test do
   gem 'simplecov', '0.16.1'
   gem 'webmock', '3.3.0'
   #gem 'ZenTest', '4.11.0'
+end
+
+
+group :production do
+  gem 'pg'
 end
