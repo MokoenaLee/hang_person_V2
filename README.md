@@ -25,7 +25,7 @@ Project Components: (hang_person_V2/lib/hangperson_game.rb)
  #### Order Context:
  
 Tests (hang_person_V2/spec/hangperson_game_spec.rb)
-=================
+====================================================
 I have written 18 acceptance tests to ensure that the code is working as expected. 
 
 I wrote these tests when I was adapting my non- SaaS application to a SaaS based application to ensure:
@@ -34,7 +34,7 @@ I wrote these tests when I was adapting my non- SaaS application to a SaaS based
 - that the application responds to both correct and incorrect guesses by flashing the appropriate messages and updating the respective arrays. 
 
  =====================
-|All 18 are passing  |
+| All 18 are passing  |
  =====================
 
 Key takeaways
