@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'hangperson_game'
 
+# test structure for the game's bevaiour is specified below, testing each method's behavior
 describe HangpersonGame do
   # helper function: make several guesses
   def guess_several_letters(game, letters)

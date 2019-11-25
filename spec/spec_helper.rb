@@ -1,4 +1,5 @@
 #require 'simplecov'
+#simplecov is a coverage analysis tool
 #SimpleCov.start
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
