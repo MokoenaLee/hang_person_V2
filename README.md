@@ -26,7 +26,7 @@ Project Components: (hang_person_V2/lib/hangperson_game.rb)
  
 Tests (hang_person_V2/spec/hangperson_game_spec.rb)
 ====================================================
-I have written 18 rspec tests to ensure that the code is working as expected. 
+I have written 18 rspec tests to ensure that the code is working as expected(screenshot included in the directory)
 
 I wrote these tests when I was adapting my non- SaaS application to a SaaS based application to ensure:
 - that the application displays expected behavior when the user first navigates to the starting page and initiates a game
