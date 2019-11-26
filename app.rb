@@ -15,8 +15,7 @@ class HangpersonApp < Sinatra::Base
     session[:game] = @game
   end
 
-  # These two routes are good examples of Sinatra syntax
-  # to help you with the rest of the assignment
+  #Sinatra syntax for routing
   get '/' do
     redirect '/new'
   end
@@ -56,7 +55,7 @@ class HangpersonApp < Sinatra::Base
   # Everytime a guess is made, we should eventually end up at this route.
   # Use existing methods in HangpersonGame to check if player has
   # won, lost, or neither, and take the appropriate action.
-  # Notice that the show.erb template expects to use the instance variables
+  # Notice that the show.erb template expects to use the instance variables of the HangPersonGame class
   # wrong_guesses and word_with_guesses from @game.
   get '/show' do
      if @game.check_win_or_lose == :win
@@ -83,7 +82,7 @@ class HangpersonApp < Sinatra::Base
      if @game.check_win_or_lose == :lose
          erb :lose
      end
-    # You may change/remove this line
+    
   end
 
 end
