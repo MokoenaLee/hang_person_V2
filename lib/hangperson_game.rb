@@ -17,7 +17,6 @@ class HangpersonGame
 
   end
 
-
 #keeping list of correct and incorrect guesses so far by adding characters to the list
 #ensure that if user enters more than one character variables remain unchanged
 #also ensure that character has not been guessed before
@@ -60,7 +59,7 @@ class HangpersonGame
  def self.guesses_so_r
     puts "Right guess #{@@guesses_right_far}"
  end
-      
+
  def self.guesses_so_w
     puts "Wrong guess #{@@guesses_wrong_far}"
  end
