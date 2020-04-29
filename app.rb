@@ -33,7 +33,7 @@ class HangpersonApp < Sinatra::Base
   # Use existing methods in HangpersonGame to process a guess.
   # If a guess is repeated, set flash[:message] to "You have already used that letter."
   # If a guess is invalid, set flash[:message] to "Invalid guess."
-  
+
   post '/guess' do
      letter = params[:guess].to_s[0]
 
@@ -44,13 +44,13 @@ class HangpersonApp < Sinatra::Base
        @w_guesses = @game.guesses_so_w
      else
       flash[:message] = "correct guesses so far"
-      @r_guesses = @game.guesses_so_r     
+      @r_guesses = @game.guesses_so_r
      end
 
     redirect '/show'
   end
 
-  
+
 
   # Everytime a guess is made, we should eventually end up at this route.
   # Use existing methods in HangpersonGame to check if player has
@@ -68,12 +68,12 @@ class HangpersonApp < Sinatra::Base
        flash[:message] = "Play On"
        redirect '/guess'
      end
-    
-    #erb :show # You may change/remove this line
+
+
   end
 
   get '/win' do
-    if @game.check_win_or_lose == :lose
+    if @game.check_win_or_lose != :lose
       flash[:message] = "You're a winner!"
     end
   end
@@ -82,7 +82,7 @@ class HangpersonApp < Sinatra::Base
      if @game.check_win_or_lose == :lose
          erb :lose
      end
-    
+
   end
 
 end

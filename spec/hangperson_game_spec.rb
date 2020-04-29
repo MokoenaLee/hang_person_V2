@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'hangperson_game'
 
-# test structure for the game's bevaiour is specified below, testing each method's behavior
+# test structure for the game's behavior is specified below, testing each method's behavior
 describe HangpersonGame do
   # helper function: make several guesses
   def guess_several_letters(game, letters)
@@ -11,7 +11,7 @@ describe HangpersonGame do
   end
 
   describe 'new' do
-    it "takes a parameter and returns a HangpersonGame object" do      
+    it "takes a parameter and returns a HangpersonGame object" do
       @hangpersonGame = HangpersonGame.new('glorp')
       expect(@hangpersonGame).to be_an_instance_of(HangpersonGame)
       expect(@hangpersonGame.word).to eq('glorp')
@@ -81,6 +81,9 @@ describe HangpersonGame do
       it 'throws an error when not a letter'do
         expect { @game.guess('%') }.to raise_error(ArgumentError)
       end
+      it 'throws an error when it is a digit' do
+        expect {@game.guess('%')}.to raise_error(ArgumentError)
+      end
       it 'throws an error when nil' do
         expect { @game.guess(nil) }.to raise_error(ArgumentError)
       end
@@ -106,7 +109,7 @@ describe HangpersonGame do
   end
 
   describe 'game status' do
-    before :each do 
+    before :each do
       @game = HangpersonGame.new('dog')
     end
     it 'should be win when all letters guessed' do
