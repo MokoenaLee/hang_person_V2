@@ -17,8 +17,9 @@ class HangpersonApp < Sinatra::Base
   end
 
   #Sinatra syntax for routing
-  get '/layout' do
-    redirect '/new'
+  get '/' do
+    erb :index, :layout => :post 
+    #redirect '/new'
   end
 
   get '/new' do

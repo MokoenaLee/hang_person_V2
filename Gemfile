@@ -8,7 +8,7 @@ gem 'shotgun'
 
 group :development, :test do
 
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'cucumber', '2.0.0'
   gem 'cucumber-sinatra', '0.5.0'
   gem 'capybara', '3.1'
@@ -16,6 +16,7 @@ group :development, :test do
   gem 'rspec', '3.3.0'
   gem 'rspec-autotest', '1.0.0'
 
+  gem 'rack', '>= 2.0.8'
   gem 'rack-test', '0.6.3'
   gem 'rack_session_access', '0.1.1'
 
