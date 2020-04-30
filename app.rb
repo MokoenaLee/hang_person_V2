@@ -74,7 +74,7 @@ class HangpersonApp < Sinatra::Base
   end
 
   get '/win' do
-    if @game.check_win_or_lose != :lose
+    if @game.check_win_or_lose == :win
       flash[:message] = "You're a winner!"
     end
   end
@@ -85,5 +85,6 @@ class HangpersonApp < Sinatra::Base
      end
 
   end
+
 
 end
