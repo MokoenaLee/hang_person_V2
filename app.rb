@@ -64,7 +64,7 @@ class HangpersonApp < Sinatra::Base
        @lost = @game.word_with_guesses
      else
        flash[:message] = "Play On"
-       redirect_to '/guess'
+       redirect '/guess'
      end
 
 
