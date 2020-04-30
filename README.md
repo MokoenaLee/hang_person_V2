@@ -1,6 +1,6 @@
 Hang Person: The Guesser's Quest
 =================================================================================================
-The Guesser's Quest is a game that applies the same logic as the hangman game where a user is given a fixed number of attempts to guess the characters in a word. I have developed this game as a webapplication using Ruby on Rails and deployed to the cloud as a Heroku app.
+The Guesser's Quest is a game that applies the same logic as the hangman game where a user is given a fixed number of attempts to guess the characters in a word. I have developed this game as a web application using Ruby on Rails.
 
 The game logic is as follows: 
 - an API call is made to  a random word generator website (watchout4snakes.com)
@@ -15,7 +15,8 @@ The game logic is as follows:
 
 Project Components: (hang_person_V2/lib/hangperson_game.rb)
 ===================
-- The game components for are structured using the Model View Controller design pattern to containerize the game logic
+- The game components are structured using the Model View Controller design pattern to containerize the game logic
+- hangperson_game.rb defines the game logic for keeping track of guesses, correct and incorrect as well as determining a win, lose or continue playing
 
  
  #### Order Context:
@@ -26,7 +27,7 @@ Project Components: (hang_person_V2/lib/hangperson_game.rb)
  
 Tests (hang_person_V2/spec/hangperson_game_spec.rb)
 ====================================================
-I have written 18 rspec tests to ensure that the code is working as expected(screenshot included in the directory)
+I have written 19 rspec tests to ensure that the code is working as expected(screenshot included in the directory)
 
 I wrote these tests when I was adapting my non- SaaS application to a SaaS based application to ensure:
 - that the application displays expected behavior when the user first navigates to the starting page and initiates a game
@@ -34,7 +35,7 @@ I wrote these tests when I was adapting my non- SaaS application to a SaaS based
 - that the application responds to both correct and incorrect guesses by flashing the appropriate messages and updating the respective arrays. 
 
  =====================
-| All 18 are passing  |
+| All 19 are passing  |
  =====================
 
 Key takeaways
@@ -44,6 +45,10 @@ Key takeaways
 - Understanding the importance of Behavior Driven Design and Test Driven Development during development
 - Understanding containerizing logic through the Model View Controller design pattern
 
+### Improvements (in progress):
+- writing more tests
+- DRYing the code
+- include an option to give hints and keep track of these for display at end of the game.
 
 
 
