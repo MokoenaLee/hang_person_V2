@@ -17,8 +17,8 @@ class HangpersonApp < Sinatra::Base
   end
 
   #Sinatra syntax for routing
-  get '/layout' do
-    redirect '/new'
+  get '/' do
+    redirect_to '/new'
   end
 
   get '/new' do
@@ -28,7 +28,7 @@ class HangpersonApp < Sinatra::Base
   post '/create' do
     word = params[:word] || HangpersonGame.get_random_word
     @game = HangpersonGame.new(word)
-    redirect '/show'
+    redirect_to '/show'
   end
 
   # Use existing methods in HangpersonGame to process a guess.
